@@ -1,0 +1,21 @@
+#!/bin/bash
+
+mkdir $1_project
+
+cd $1_project
+
+mkdir $1
+
+touch $1/__init__.py
+touch $1/__main__.py
+touch $1/config.py
+touch $1/cli.py
+touch $1/database.py
+touch $1/$1.py
+
+mkdir tests
+touch tests/__init__.py
+touch tests/test_$1.py
+
+touch README.md
+touch requirements.txt
